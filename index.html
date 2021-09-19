@@ -9,9 +9,10 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper" id= "wrapper">
       <h2>Adzuna Test Form</h2>
       <div id="error_message"></div>
       <form id="myform" onsubmit="return validate();">
@@ -23,6 +24,7 @@
             id="name"
             aria-describedby="nameHelp"
             placeholder="Enter Full Name"
+            required
           />
         </div>
 
@@ -34,6 +36,7 @@
             id="email"
             aria-describedby="emailHelp"
             placeholder="Enter email"
+            required
           />
         </div>
 
@@ -44,9 +47,10 @@
             id="notes"
             rows="3"
             placeholder="Enter Notes"
+            required
           ></textarea>
         </div>
-        <button type="submit" class="btn">Submit</button>
+        <button type="submit" class="btn" id="btn">Submit</button>
       </form>
     </div>
   </body>
