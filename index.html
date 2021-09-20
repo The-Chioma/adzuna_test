@@ -12,7 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   </head>
   <body>
-    <div class="wrapper" id= "wrapper">
+    <!-- <div class="wrapper" id= "wrapper">
       <h2>Adzuna Test Form</h2>
       <div id="error_message"></div>
       <form id="myform" onsubmit="return validate();">
@@ -51,6 +51,58 @@
           ></textarea>
         </div>
         <button type="submit" class="btn" id="btn">Submit</button>
+      </form>
+    </div> -->
+    <div class="wrapper" id= "wrapper">
+      <h2>Adzuna Test Form</h2>
+      <div id="error_message"></div>
+      <form id="myform" onsubmit="return validate();">
+        <div class="row">
+          <div class="col-25">
+            <label for="fullname">Full Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="name"
+              name="fullname"
+              placeholder="Your full name.."
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+              <label for="email">Email</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email.."
+                required
+              />
+            </div>
+          </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="notes">Notes</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              id="notes"
+              name="notes"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row" id= "btn">
+          <input type="submit" value="Submit" />
+        </div>
       </form>
     </div>
   </body>

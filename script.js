@@ -5,15 +5,13 @@
         const notes = document.getElementById("notes").value;
         const error_message = document.getElementById("error_message");
         
-        error_message.style.padding = "10px";
-        
-        //this checks to see that the name inputes is more than 4 characters
-        if(name.length < 4){
+        //this checks to see that the name inputes is more than 5 characters
+        if(name.length < 5){
           let text = "Please Enter A Valid Name";
           error_message.innerHTML = text;
           return false;
         }
-        //this validates the email
+        //this validates the email after "required" in HTML tag does it's own verification
         if(email.indexOf("@") == -1 || email.length < 6){
           let text = "Please Enter A Valid Email";
           error_message.innerHTML = text;
