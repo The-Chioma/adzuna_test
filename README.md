@@ -1,4 +1,4 @@
-# adzuna_test
+# Adzuna Front End Developer Test
 
 Responsive form created using HTML, CSS and vanilla JavaScript. 
 
